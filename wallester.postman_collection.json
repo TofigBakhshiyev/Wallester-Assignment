@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "617c9376-e847-4b40-8120-dd65be47e656",
+		"name": "wallester",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/wallester/customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Firstname\": \"meme\",\r\n    \"Lastname\": \"pepe\",\r\n    \"Birthdate\": \"2006-01-02\",\r\n    \"Gender\": \"male\",\r\n    \"Email\": \"pepe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/wallester/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallester",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/wallester/create_customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Firstname\": \"wallester\",\r\n    \"Lastname\": \"lemon\",\r\n    \"Birthdate\": \"2006-01-02\",\r\n    \"Gender\": \"male\",\r\n    \"Email\": \"lemon@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/wallester/create_customer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallester",
+						"create_customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/wallester/get_customer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/wallester/get_customer/pepe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wallester",
+						"get_customer",
+						"pepe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
